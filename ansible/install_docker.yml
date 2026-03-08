@@ -7,7 +7,7 @@
                  url: https://download.docker.com/linux/ubuntu/gpg
                  state: present 
 
-          - name: Add Docker Repository 
+          - name: Add Docker Repository on test vm 
             apt_repository: 
                 repo: deb https://download.docker.com/linux/ubuntu focal stable
                 state: present
