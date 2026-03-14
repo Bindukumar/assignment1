@@ -4,5 +4,4 @@
   gather_facts: no
   - tasks: 
     - name: just check the login works 
-      ansible.builtin.debug:
-        var: playbook_dir
+      ansible.builtin.shell: echo "print hello"
