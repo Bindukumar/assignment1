@@ -1,6 +1,7 @@
 ---
 - hosts: testvm
   become: true
+  gather_facts: false
   tasks:
           - name: Add docker gpg apt key and checking webhook
             apt_key:
